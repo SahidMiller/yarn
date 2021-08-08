@@ -108,6 +108,10 @@
     "node": ">=4.0.0"
   },
   "repository": "yarnpkg/yarn",
+  "main": "lib/cli/index.js",
+  "browser": {
+    "./lib/util/generate-pnp-map-api.tpl.js": false
+  },
   "bin": {
     "yarn": "./bin/yarn.js",
     "yarnpkg": "./bin/yarn.js"
